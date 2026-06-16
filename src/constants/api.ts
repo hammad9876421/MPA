@@ -4,6 +4,8 @@ export const API = {
 
   SEARCH_LIMIT: 100,
 
-  CACHE_TIME: 1000 * 60 * 30,
+  TIMEOUT: 15000,
+
+  CACHE_TIME: 1800000,
 
 };
