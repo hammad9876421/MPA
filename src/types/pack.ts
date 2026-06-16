@@ -1,4 +1,4 @@
-import { ModItem } from "./mod";
+import type { ModItem } from "./mod";
 
 export interface Pack {
 

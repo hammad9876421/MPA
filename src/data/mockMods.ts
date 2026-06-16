@@ -1,4 +1,4 @@
-import { ModItem } from "../types/mod";
+import type { ModItem } from "../types/mod";
 
 export const mockMods: ModItem[] = [
   {
