@@ -1,9 +1,35 @@
+const chips = [
+  "1.21.1 ▼",
+  "NeoForge ▼",
+  "All ▼",
+];
+
 export default function FilterBar() {
   return (
-    <div className="flex gap-2 text-xs overflow-x-auto py-2">
-      <button className="px-3 py-1 bg-[#1a2230] rounded-full">Version</button>
-      <button className="px-3 py-1 bg-[#1a2230] rounded-full">Loader</button>
-      <button className="px-3 py-1 bg-[#1a2230] rounded-full">Category</button>
+    <div
+      style={{
+        display: "flex",
+        gap: "10px",
+        overflowX: "auto",
+        padding: "10px 0",
+      }}
+    >
+      {chips.map((chip) => (
+        <button
+          key={chip}
+          style={{
+            background: "#1a2230",
+            color: "white",
+            border: "none",
+            borderRadius: "999px",
+            padding: "10px 16px",
+            whiteSpace: "nowrap",
+            fontSize: "14px",
+          }}
+        >
+          {chip}
+        </button>
+      ))}
     </div>
   );
 }
